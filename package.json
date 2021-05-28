@@ -1,0 +1,14 @@
+{
+  "name": "aws-text-service",
+  "version": "1.0.0",
+  "description": "This project is a test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/App.js"
+  },
+  "author": "Jeff T",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
