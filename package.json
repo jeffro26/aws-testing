@@ -4,7 +4,7 @@
   "description": "This project is a test",
   "main": "index.js",
   "scripts": {
-    "start": "node src/App.js"
+    "start": "node src/index.js"
   },
   "author": "Jeff T",
   "license": "ISC",
