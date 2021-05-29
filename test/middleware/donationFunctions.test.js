@@ -13,7 +13,6 @@ describe("Donation Functions", () => {
   let req;
   let res;
   const next = jest.fn();
-  cacheFunctions.setItemInCache.mockImplementation(() => {});
   it("Should call cache when supplied with all needed parameters", async () => {
     Date.now = jest.fn(() => 1487076708000);
     const { original, key, valObject } = mockCacheData[0];
