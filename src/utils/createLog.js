@@ -7,7 +7,10 @@ const createLogItem = (type, internalHandlingCode) => {
       (item) => item.internalCode == internalHandlingCode
     );
     if (error) {
-      createError(error.code, err);
+      throw createError(error.code, error.message);
+      
     }
   }
 };
+
+module.exports = { createLogItem };
