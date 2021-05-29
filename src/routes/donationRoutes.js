@@ -1,8 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const { makeDonation } = require("../middleware/donationFunctions");
+const {
+  makeDonation,
+  makeResponse,
+} = require("../middleware/donationFunctions");
 
-router.post("/:customerId?", makeDonation, (req, res) => {
+router.post("/donate", makeDonation, makeResponse, (req, res) => {
   res.status(200).json(req.result);
 });
 

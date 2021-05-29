@@ -6,10 +6,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 const { createLogItem } = require("./utils/createLog");
+const {intializeCache} = require('./cache/nodeCache')
 
 const donationRouter = require("./routes/donationRoutes");
 
-app.use("/api/donate", donationRouter);
+app.use("/api/donations", donationRouter);
 
 app.use((err, req, res, next) => {
   if (err.expose === undefined) {
@@ -27,5 +28,6 @@ const setUp = async () => {
   console.log(`I am listening on ${port}`);
 };
 setUp();
+intializeCache()
 
 module.exports = { app, server };
