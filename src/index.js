@@ -1,4 +1,6 @@
+const serverless = require('serverless-http');
 const express = require("express");
+
 const cors = require("cors");
 
 const app = express();
@@ -25,9 +27,9 @@ const port = 3003;
 
 const setUp = async () => {
   server = app.listen(port);
-  console.log(`I am listening on ${port}`);
+  (createLogItem("success", "SCC003"))
 };
 setUp();
 intializeCache()
 
-module.exports = { app, server };
+module.exports = serverless(app)
