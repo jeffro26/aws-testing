@@ -32,4 +32,4 @@ const setUp = async () => {
 setUp();
 intializeCache()
 
-module.exports = serverless(app)
+// module.exports = serverless(app)
