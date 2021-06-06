@@ -17,6 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "@aws-cdk/assert": "^1.107.0",
+    "@aws-cdk/core": "^1.107.0",
+    "aws-cdk": "^1.107.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
