@@ -17,3 +17,15 @@ How to install:
 1) Pull the code
 2)run 'npm install' to install all dependencies. 
 3)You are now ready to begin using the app locally
+
+How to test:
+Please use post to send a POST request with the following data object:
+localhost:3003/api/donations/donate
+{
+    "data": {
+        "customerId": 850689877,
+        "amount": 200.92,
+        "currency": "AMERICAN DOLLARS"
+    }
+}
+Sending another request under the same customer ID will result in a thank you message being returned.
