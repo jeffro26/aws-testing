@@ -20,7 +20,9 @@ How to install:
 
 How to test:
 Please use post to send a POST request with the following data object:
+
 localhost:3003/api/donations/donate
+
 {
     "data": {
         "customerId": 850689877,
@@ -28,4 +30,5 @@ localhost:3003/api/donations/donate
         "currency": "AMERICAN DOLLARS"
     }
 }
+
 Sending another request under the same customer ID will result in a thank you message being returned.
