@@ -19,7 +19,7 @@ How to install:
 3)You are now ready to begin using the app locally
 
 How to test:
-Please use post to send a POST request with the following data object:
+Please use postman(or any equivalent) to send a POST request with the following data object:
 
 localhost:3003/api/donations/donate
 
