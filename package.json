@@ -2,8 +2,12 @@
   "name": "aws-text-service",
   "version": "1.0.0",
   "description": "This project is a test",
+  "bin": {
+    "aws-text-service": "bin/aws-text-service.js"
+  },
   "main": "index.js",
   "scripts": {
+    "cdk": "cdk",
     "start": "node src/index.js",
     "start-dev": "nodemon node src/index.js",
     "test": "jest --watch",
@@ -12,6 +16,9 @@
   "author": "Jeff T",
   "license": "ISC",
   "dependencies": {
+    "@aws-cdk/assert": "^1.107.0",
+    "@aws-cdk/core": "^1.107.0",
+    "aws-cdk": "^1.107.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
@@ -21,6 +28,7 @@
     "node-mocks-http": "^1.10.1",
     "nodecache": "0.0.2",
     "nodemon": "^2.0.7",
+    "serverless-http": "^2.7.0",
     "test": "^0.6.0"
   }
 }

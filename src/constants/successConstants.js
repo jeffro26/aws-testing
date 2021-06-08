@@ -11,4 +11,10 @@ module.exports.successTemplates = [
         internalCode: 'SCC002',
         message: "Cache Item set",
       },
+      {
+      
+        code: 200,
+        internalCode: 'SCC003',
+        message: "Node Layer Started on port",
+      },
 ]
