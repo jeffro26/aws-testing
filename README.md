@@ -5,9 +5,9 @@ Currently this application only functions locally with work in progress to:
 
 1) Convert the functionality to support the lambda gateway written in the stack file by converting already written code in the src folder
 
-2) Unit test new aws cdk code
+2) Unit test the new aws cdk code
 
-3) Retire old server code in Main branch once code has been successfully onto AWS.
+3) Retire the old server code in Main branch once code has been successfully onto AWS.
 
 Available Commands
 
@@ -32,6 +32,8 @@ How to install:
 3) You are now ready to begin using the app locally
 
 How to test:
+
+Currently the code uses node-cache to retain request information and when it detects that same customer ID has donated again it will return a message in the response body. In the real world however, this would be handled via the use of a non-relational database solution such as DynamoDB which would allow the data to be stored in JSON format for ease of processing and allow for a more scalable solution given the support AWS would have.
 
 Please use postman(or any equivalent) to send a POST request with the following data object:
 
